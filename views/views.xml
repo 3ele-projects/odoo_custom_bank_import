@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+        <!-- actions opening views on models -->
+
+        <record model="ir.actions.act_window" id="custom_bank_import.action_window">
+            <field name="name">Kontoauszüge</field>
+            <field name="res_model">account.bank.statement</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- add a new menu item for controlling and automation -->
+        <menuitem id="menu_account_bank_statement_import" parent="account.menu_finance"
+                  action="custom_bank_import.action_window" sequence="70"/>
+
+    </data>
+</odoo>
