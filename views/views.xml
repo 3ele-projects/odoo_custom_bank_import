@@ -13,5 +13,16 @@
         <menuitem id="menu_account_bank_statement_import" parent="account.menu_finance"
                   action="custom_bank_import.action_window" sequence="70"/>
 
+
+        <record id="custom_bank_import_max_range_config" model="ir.config_parameter">
+            <field name="key">custom_bank_import_max_range</field>
+            <field name="value">14</field>
+        </record>
+
+        <record id="custom_bank_import_min_range_config" model="ir.config_parameter">
+            <field name="key">custom_bank_import_min_range</field>
+            <field name="value">9</field>
+        </record>
+
     </data>
 </odoo>
